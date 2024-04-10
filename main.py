@@ -10,7 +10,12 @@ def encode(password):
     return new_code
 
 
+def decode(encoded_p):
+    decoded_password = ""
+    for char in encoded_p:
+        decoded_password += str(int(char)-3)
 
+    return decoded_password
 
 
 
